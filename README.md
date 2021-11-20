@@ -104,7 +104,13 @@
 
 
              Shape GlyShape = NewGlyph.getOutline(50, 200);
-             NewGlyph = createGlyphVector(NewContext, str);
+             
+             
+             
+ نعين خصائص النص للمتجه الذي أنشئناه للتو
+ 
+ 
+             NewGlyph = Newfont.createGlyphVector(NewContext, str);
              
              
             
