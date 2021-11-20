@@ -48,4 +48,45 @@
 ![image](https://user-images.githubusercontent.com/63984422/142727371-2034a971-37b7-4448-834c-21d8bf5595d2.png)
 
 
+الآن إذا أردنا تعديل عدة خصائص أخرى تخص النص، مثل سماكة النص، نستعمل الدالة Stroke حتى تحدد سُمك النص، كالتالي:
+
+
+           Stroke NewStorke = new BasicStroke(200, BasicStorke.CAP_BUTT, BasicStroke.JOIN_BEVEL);
+           
+ثم لتعيين وتخصيص دالة السُمك التي عرفناها للتو، نستعمل دالة setStroke كالتالي:
+
+
+          g2.setStroke(NewStroke);
+          
+
+بعد إذ، أن أردنا طباعة التالي، نلاحظ تغير السُمك كالتالي:
+
+
+![image](https://user-images.githubusercontent.com/63984422/142727734-ba919727-daac-4aff-a381-70742f85226b.png)
+
+
+أما إذا أردنا إضافة بعض الخصائص، والأساليب الأخرى، مثل أن نجعل النص يبدو مائلًا، فسنستعمل التحويلات الهندسية التي تعلمناها فيما سبق، بالأخص الShear حتى يُضفي على النص ميل
+
+
+        AffineTransform newShear = new Affinetransform();
+        
+        newShare.shear(0,0.5);
+        
+        
+        
+ثم حتى نخصص هذا التحويل الهندسي، للنص الذي أردنا استعماله، نمرر متغيرات، للدالة setFont كالتالي
+
+
+                  g2.setFont(NewFont.deriveFont(newShear));
+                  
+                  
+بعد ذلك، حين نطبع النص، يكون كالتالي:        
+        
+        ![image](https://user-images.githubusercontent.com/63984422/142728161-3e804129-39e2-4377-9ec4-2c710674a184.png)
+
+
+
+
+
+
 
