@@ -82,7 +82,7 @@
                   
 بعد ذلك، حين نطبع النص، يكون كالتالي:        
         
-        ![image](https://user-images.githubusercontent.com/63984422/142728161-3e804129-39e2-4377-9ec4-2c710674a184.png)
+![image](https://user-images.githubusercontent.com/63984422/142728161-3e804129-39e2-4377-9ec4-2c710674a184.png)
 
 
 
