@@ -27,4 +27,9 @@
 ومن خلال تحديد الخصائص، أي اسم الخط، مثل Serif, SansSerif, Monospaced, Dialog, and DialogInput 
        
        
-       Font NewFont = new Font("Strief", Font.BOLD, 20);
+       Font NewFont = new Font("Serif", Font.BOLD, 20);
+       
+       
+لطباعة الشكل التالي، نكتب النص البرمجي التالي، مع تحديدنا لأبعاده من نقطة x و y
+
+      g2.drawString(sr, 200,200);
