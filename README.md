@@ -85,6 +85,35 @@
 ![image](https://user-images.githubusercontent.com/63984422/142728161-3e804129-39e2-4377-9ec4-2c710674a184.png)
 
 
+اما إذا أردنا التعامل مع النص باعتباره شكل، ذا متجهات، نستعمل الدالة Glyph Vector ونقوم بتعريفها كالتالي
+
+                
+                
+                GlyphVector NewGlyph;
+                
+                NewGlyph = createGlyphVector(NewContext, str);
+                
+                
+ثم نعين النص الذي نريد أن نجعله مُتجهًا، عن طريق استعمال دالة FontRenderContext 
+
+
+              FontRenderContext NewContext = g2.getFrontRenderContext();
+              
+              
+ثم حتى نحول النص إلى شكل، نقوم بتعريف شكل جديد كالتالي 
+
+
+             Shape GlyShape = NewGlyp.getOutline(50, 200);
+             
+             
+            
+ثم لطباعة النص الذي قمنا باعتباره كشكل: 
+
+
+             
+             g2.draw(GlyShape);
+
+
 
 
 
