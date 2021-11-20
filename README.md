@@ -27,9 +27,25 @@
 ومن خلال تحديد الخصائص، أي اسم الخط، مثل Serif, SansSerif, Monospaced, Dialog, and DialogInput 
        
        
-       Font NewFont = new Font("Serif", Font.BOLD, 20);
+       Font NewFont = new Font("Serif", Font.BOLD, 80);
+       
+       
+       
+لتخصيص اسلوب الخط الذي عيناه للتو، يتوجب علينا استعمال دالة setFont حتى نخصص أسلوب الخط
+
+
+      g2.setFont(NewFont);
        
        
 لطباعة الشكل التالي، نكتب النص البرمجي التالي، مع تحديدنا لأبعاده من نقطة x و y
 
       g2.drawString(sr, 200,200);
+      
+      
+ستكون المخرجات كالتالي:
+
+
+![image](https://user-images.githubusercontent.com/63984422/142727371-2034a971-37b7-4448-834c-21d8bf5595d2.png)
+
+
+
