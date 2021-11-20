@@ -91,19 +91,20 @@
                 
                 GlyphVector NewGlyph;
                 
-                NewGlyph = createGlyphVector(NewContext, str);
+               
                 
                 
 ثم نعين النص الذي نريد أن نجعله مُتجهًا، عن طريق استعمال دالة FontRenderContext 
 
 
-              FontRenderContext NewContext = g2.getFrontRenderContext();
+              FontRenderContext NewContext = g2.getFontRenderContext();
               
               
 ثم حتى نحول النص إلى شكل، نقوم بتعريف شكل جديد كالتالي 
 
 
-             Shape GlyShape = NewGlyp.getOutline(50, 200);
+             Shape GlyShape = NewGlyph.getOutline(50, 200);
+             NewGlyph = createGlyphVector(NewContext, str);
              
              
             
